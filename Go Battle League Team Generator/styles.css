@@ -1,0 +1,58 @@
+h1 { 
+    color: #ffffff; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 32px; font-weight: 800; 
+     
+    
+}
+
+h2 { 
+    color: #ffffff; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 15px; font-weight: 800; 
+    
+    
+}
+
+.tab-content {
+    background: white;
+    height: 20rem;
+    width: 100%;
+}
+header {
+    background: black;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    background: lavender;
+    font-size: 16px;
+    font-family: 'Raleway',sans-serif;
+    
+    
+}
+
+
+
+
+
+section {   
+    background: lavender;
+    margin: 20px 0 0;
+    
+    
+}
+
+footer {
+    background: black;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+ 

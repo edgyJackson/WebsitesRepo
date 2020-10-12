@@ -1,0 +1,1 @@
+var foo = requestCSV("csvfile.csv",drawlines(lines));
