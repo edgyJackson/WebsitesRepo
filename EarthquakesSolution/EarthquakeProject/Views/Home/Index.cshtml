@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<div class="row">
+    <div class="col">
+        <button id="earthquakes" name="earthquakes" class="btn btn-outline-danger" btn-sm>Get Recent Earthquakes</button>
+
+        <div class="">
+            <ul id="theQuakes"></ul>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+@section Scripts {
+    <script type="text/javascript" src="~/js/main.js"></script>
+}

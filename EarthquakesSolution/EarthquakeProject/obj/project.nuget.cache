@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aNNWLWigtf50niYzwvXVvZdV5spxoA0j0xqZWuQ78JnMogwS5hSzjQjuOVZK0H5SZ2RCceZ6+56jy3U7JF31iw==",
+  "success": true,
+  "projectFilePath": "D:\\user\\RLJ\\CS460-SoftEngineering\\DEMO_REPO\\EarthquakesSolution\\EarthquakeProject\\EarthquakeProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rljohns\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
