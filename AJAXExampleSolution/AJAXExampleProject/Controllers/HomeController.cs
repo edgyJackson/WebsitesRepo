@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AJAXExampleProject.Models;
+using Microsoft.Extensions.Configuration;
 
 namespace AJAXExampleProject.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IConfiguration _config;
+        public HomeController(ILogger<HomeController> logger, IConfiguration config)
         {
             _logger = logger;
+            _config = config;
         }
 
         public IActionResult Index()
@@ -25,6 +27,8 @@ namespace AJAXExampleProject.Controllers
 
         public IActionResult Privacy()
         {
+            string secret = _config["Secret:Password"];
+            Debug.WriteLine("secret is: " + secret);
             return View();
         }
 
