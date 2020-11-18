@@ -25,6 +25,19 @@ namespace AJAXExampleProject.Controllers
             return View();
         }
 
+        public IActionResult RandomNumbers(int? count = 100)
+        {
+            Random generator = new Random();
+            var data = new
+            {
+                message = "Random Numbers API",
+                num = (int)count,
+                domain = Enumerable.Range(1,(int)count),
+                range = Enumerable.Range(1, (int)count).Select(x=> generator.Next(1000))
+            };
+            return Json(data);
+        }
+
         public IActionResult Privacy()
         {
             string secret = _config["Secret:Password"];

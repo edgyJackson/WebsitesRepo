@@ -45,6 +45,11 @@ namespace AJAXExampleProject
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "API random numbers",
+                    pattern: "apiv0/random/numbers/{count?}",
+                    defaults: new { controller = "Home", action = "RandomNumbers"});
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
